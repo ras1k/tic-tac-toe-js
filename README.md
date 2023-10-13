@@ -5,7 +5,7 @@
 ## Instructions:
 * Click the link to start the game.
 * It's a two player game.
-* First is X's move, Then O's
+* First is X's move, then O's
 * Match any three to win.
 
 ## Technologies Used:
