@@ -1,14 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Tic Tac Toe</title>
-</head>
-<body>
+<html>
+  <head>
+    <title>Tic Tac Toe </title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <h1 id="heading">Tic Tac Toe Challenge</h1>
+    <table>
+      <tr>
+        <td onclick="makeMove(0, 0)"></td>
+        <td onclick="makeMove(0, 1)"></td>
+        <td onclick="makeMove(0, 2)"></td>
+      </tr>
+      <tr>
+        <td onclick="makeMove(1, 0)"></td>
+        <td onclick="makeMove(1, 1)"></td>
+        <td onclick="makeMove(1, 2)"></td>
+      </tr>
+      <tr>
+        <td onclick="makeMove(2, 0)"></td>
+        <td onclick="makeMove(2, 1)"></td>
+        <td onclick="makeMove(2, 2)"></td>
+      </tr>
+    </table>
+    <p id="result"></p>
+    <p id="turnMessage">Now it's X's turn.</p>
     
 
-    <script src="script.js"></script>
-</body>
+    <script src="./script.js"></script>
+  </body>
 </html>
