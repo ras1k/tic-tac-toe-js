@@ -22,27 +22,27 @@
             document.getElementById('result').textContent = `Player ${currentPlayer} wins!`;
 
             // Play a sound for winning
-            const winAudio = new Audio('/win.mp3');
+            const winAudio = new Audio('./sounds/win.mp3');
             winAudio.play();
 
             // Show an alert and restart the game
             setTimeout(() => {
               alert(`Player ${currentPlayer} wins!`);
               resetGame(); // Start a new game
-            }, 1000);
+            }, 500);
           } else if (isBoardFull()) {
             // The game is a tie
             document.getElementById('result').textContent = "It's a draw!";
 
             // Play a sound for a tie
-            const tieAudio = new Audio('/tie.mp3');
+            const tieAudio = new Audio('./sounds/draw.mp3');
             tieAudio.play();
 
             // Show an alert and restart the game
             setTimeout(() => {
               alert("It's a draw!");
               resetGame(); // Start a new game
-            }, 1000);
+            }, 500);
           } else {
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
             const turnMessage = document.getElementById('turnMessage');
